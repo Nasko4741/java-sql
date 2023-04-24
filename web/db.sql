@@ -1,2 +1,11 @@
 DROP DATABASE IF EXISTS cars;
 CREATE DATABASE cars;
+USE cars;
+CREATE TABLE potrebiteli (id INT, name VARCHAR(255), mail VARCHAR(255), pass VARCHAR(255));
+INSERT INTO potrebiteli VALUES (1, "Hristo Hristov", "hristo@gmail.com", "123456");
+INSERT INTO potrebiteli VALUES (2, "Atanas Yordanov", "naski4a@gmail.com", "boykobate");
+INSERT INTO potrebiteli VALUES (3, "Rumen Kunev", "rumkata@gmail.com", "bogelubov");
+INSERT INTO potrebiteli VALUES (4, "Mitko Bombata", "mitarata@gmail.com", "mitioochite");
+CREATE TABLE rims(id INT, name VARCHAR(255), colaj INT, ET INT, J INT);
+INSERT INTO rims VALUES (1, "JR11", 17, 25, 7);
+INSERT INTO rims VALUES (2, "JR10", 18, 18, 6);
